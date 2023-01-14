@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Anna Caroline e Bárbara Beatriz" />
+    <meta name="historia café" content="História do café." />
+    <meta name="keywords" content="café, cafeteira, expresso, história" />
+    <title>Compras</title>
+    <link rel="stylesheet" type="text/css" href="css/sitecafe.css">
+</head>
+<body class="body">
+    <header id="menu">
+		<section class="contato-menu">
+			<img id="img-inicio" src="img/Logo_pequeno.png" alt="Logo da loja, com o nome Expresso Café, e um trem no meio."/>
+
+			<div id="linha">
+
+			</div>
+		</section>
+
+		<address class="contato-menu">
+			<p class="p-menu">Avenida Mochaccino, 10</p>
+			<p class="p-menu">Tel: (21) 1234-5678</p>
+			<p class="p-menu">contato@coffe.com.br</p> 
+			<a href="mailto:contato@coffe.com.br"></a>
+		</address>
+	</header> 
+
+	<nav>	
+		<ul id="lista-navegacao">
+			<li><a class="link-paginas" href="index.html">Inicial</a></li>
+			<li><a class="link-paginas" href="historia.html">História</a></li>
+			<li><a class="link-paginas" href="maquinas.html">Máquinas</a></li>
+			<li><a class="link-paginas" href="saches.html">Sachês</a></li>
+			<li><a class="link-paginas" href="compras.html">Compras</a></li>
+		</ul>
+	</nav>
+
+    <section id="secao-compras">
+        <form id="formulario-compras" action="">
+            <fieldset id="dados-identificacao">
+                <legend>Dados de Identificação:</legend> 
+
+                <label for="nome">Nome:</label>
+                <input class="input-200" type="text" id="nome" placeholder="Nome completo">
+
+                <label for="cpf">CPF:</label>
+                <input class="input-120" type="number" id="cpf" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}"
+                required placeholder="Somente números">
+
+                <label for="telefone" >Telefone:</label>
+                <input class="input-120" type="tel" id="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                required placeholder="xx xxxxx xxxx">
+
+                <label for="email" >E-mail:</label>
+                <input class="input-200" type="email" id="email" placeholder="usuario@dominio.com">
+
+                <label for="endereco" >Endereço:</label>
+                <input class="input-420" type="text" id="endereco" placeholder="Endereço">
+            </fieldset>
+
+            <fieldset id="produtos">
+                <legend>Produtos</legend>
+
+                <label for="maquinas">Máquinas:</label>
+
+                <select name="maquinas" id="maquinas" class="input-100" onchange="selectMaquinas()">
+                    <optgroup label="Dolce Gusto">
+                        <option>Piccolo</option>
+                    </optgroup>
+                    <optgroup label="Nespresso">
+                        <option>Inissia C40</option>
+                        <option>U C50</option>
+                    </optgroup>
+                    <optgroup label="Senseo">
+                        <option>HD7811/96</option>
+                    </optgroup>
+                </select>
+
+                <label for="saches">Sachês:</label>
+                
+                <select name="saches" id="saches" class="input-120" onchange="selectSaches()">
+                    <optgroup label="Dolce Gusto">
+                        <option>Expresso</option>
+                        <option>Descafeinado</option>
+                    </optgroup>
+                    <optgroup label="Nespresso">
+                        <option>Livanto</option>
+                        <option>Ristretto</option>
+                        <option>Vanilio</option>
+                    </optgroup>
+                    <optgroup label="Senseo">
+                        <option>Clássico</option>
+                        <option>Intenso</option>
+                    </optgroup>
+                </select>
+
+                <label for="botao-remover">Selecionados:</label>
+                <button id="botao-remover">remover</button>
+                
+                <textarea name="textarea" id="textarea" cols="20" rows="5"></textarea>
+
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" class="input-80" class="direita">
+            </fieldset>
+
+            <fieldset id="forma-pagamento">
+                <legend>Forma de Pagamento</legend>
+                <div>
+                    <input type="radio" id="cartao" name="pagamento">
+                    <label for="cartao">Cartão</label>
+                
+                    <input type="radio" id="cheque" name="pagamento">
+                    <label for="cheque">Cheque</label>
+                
+                    <input type="radio" id="dinheiro" name="pagamento">
+                    <label for="dinheiro">Dinheiro</label>
+                </div>
+                <fieldset id="fieldset-dados-cartao">
+                    <legend>Dados do Cartão</legend>
+
+                    <input type="radio" id="visa" name="bandeira-cartao">
+                    <label for="visa"><img src="img/visa.png" alt="Imagem cartão Visa."></label>
+
+                    <input type="radio" id="master" name="bandeira-cartao">
+                    <label for="master"><img src="img/master.png" alt="Imagem cartão MasterCard."></label>
+
+                    <input type="radio" id="amex" name="bandeira-cartao">
+                    <label for="amex"><img src="img/amex.png" alt="Imagem cartão Amex."></label>
+
+                    <label for="validade">Validade:</label>
+                    <input type="month" name="" id="validade-cartao" class="input-120">
+
+                    <!--Ver se tem outro input que pode ser usado, que receba apenas números. Tentei com o type "number"
+                    mas não ficou legal-->
+                    <label for="numero">Número:</label>
+                    <input id="numero" type="text" class="input-120" onkeyup="verificarBandeira()">
+                </fieldset>
+                <button id="limpar">Limpar</button>
+                <button id="enviar">Enviar</button>
+            </fieldset>  
+        </form>  
+    </section>
+    <script type="text/javascript" src="js/site-cafe.js"></script>
+</body>
+</html>

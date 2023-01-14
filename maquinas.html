@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Anna Caroline e Bárbara Beatriz" />
+    <meta name="historia café" content="História do café." />
+    <meta name="keywords" content="café, cafeteira, expresso, história" />
+    <title>Máquinas</title>
+    <link rel="stylesheet" type="text/css" href="css/sitecafe.css">
+</head>
+<body class="body">
+    <header id="menu">
+		<section class="contato-menu">
+			<img id="img-inicio" src="img/Logo_pequeno.png" alt="Logo da loja, com o nome Expresso Café, e um trem no meio."/>
+
+			<div id="linha">
+
+			</div>
+		</section>
+
+		<address class="contato-menu">
+			<p class="p-menu">Avenida Mochaccino, 10</p>
+			<p class="p-menu">Tel: (21) 1234-5678</p>
+			<p class="p-menu">contato@coffe.com.br</p> 
+			<a href="mailto:contato@coffe.com.br"></a>
+		</address>
+	</header> 
+
+	<nav>	
+		<ul id="lista-navegacao">
+			<li><a class="link-paginas" href="index.html">Inicial</a></li>
+			<li><a class="link-paginas" href="historia.html">História</a></li>
+			<li><a class="link-paginas" href="maquinas.html">Máquinas</a></li>
+			<li><a class="link-paginas" href="saches.html">Sachês</a></li>
+			<li><a class="link-paginas" href="compras.html">Compras</a></li>
+		</ul>
+	</nav>
+
+    <section id="secao-tabela">
+        <table class="texto-tabela">
+            <tr>
+                <th class="titulo-tabela" colspan="4">Máquinas de Café</th>
+            </tr>
+            <tr>
+                <td class="titulo-tabela">Tipo</td>
+                <td class="titulo-tabela">Modelo</td>
+                <td class="titulo-tabela">Foto</td>
+                <td class="titulo-tabela">Preço</td>
+            </tr>
+
+            <tr>
+                <td class="titulo-coluna">Dolce Gusto</td>
+                <td onclick="piccolo()">Piccolo</td>
+                <td rowspan="4"><img src="img/vazio.jpg" alt="Máquina de café" id="maquina"></td>
+                <td  rowspan="4" id="preco" class="preco"></td> <!--a classe é para o CSS e o id para o JS-->
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="titulo-coluna">Nespresso</td>
+                <td onclick="inissia()">Inissia C40</td>
+            </tr>
+
+            <tr>
+                <td onclick="uc50()">U C50</td>
+            </tr>
+
+            <tr>
+                <td class="titulo-coluna">Senseo</td>
+                <td onclick="hd78()">HD7811/96</td>
+            </tr>
+        </table>
+    </section>
+</body>
+<script type="text/javascript" src="js/site-cafe.js"></script>
+</html>

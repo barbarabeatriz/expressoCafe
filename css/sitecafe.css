@@ -1,0 +1,308 @@
+@import url('http://fonts.cdnfonts.com/css/verdana');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{margin: 0; padding: 0;}
+/*TAGS GERAIS*/
+.body{
+	background-image: url("../img/fundo.jpg"); 
+}
+
+header{
+    display: block;
+	margin-bottom: 1px;
+}
+
+nav{
+    display: block;
+	width: 20%;
+    float: left;
+}
+
+section{
+	display: block;
+	width: 77%;
+	float: right;
+}
+
+a:visited{
+	color: #ddcc99;
+}
+
+/*MENU - IMAGEM + CONTATOS*/
+#menu{
+	display: flex;
+	margin-bottom: 60px;
+}
+
+#img-inicio{
+	height: 120px;
+}
+
+.contato-menu > p {
+	text-align: right;
+	font: 16px Verdana;
+	font-style: italic;
+	line-height: 150%;
+	color: #FFEEBB;
+}
+
+#linha{
+	width: 50%;
+  	border-bottom:solid #FFEEBB;
+	margin-top: 30px;
+}
+
+/*LISTA DE NAVERGAÇÃO LATERAL*/
+#lista-navegacao{
+	margin-left: 80px;
+}
+
+#lista-navegacao > li{
+    list-style-type: circle;
+	color: #FFEEBB;
+	margin-bottom: 20px;
+	font: 22px Verdana;
+}
+
+
+.link-paginas{
+	font: 22px Verdana;
+	color: #FFEEBB;
+	text-decoration: none;
+}
+
+/*IMAGEM CENTRO*/
+#img-texto-principal{
+	text-align: center;
+}
+
+#img-logo-meio{
+	height: 300px;
+}
+
+#img-texto-principal > p{
+	font: 18px Verdana;
+	color: #FFEEBB;
+}
+
+/*História do café*/
+.titulo{
+	font: 32px Verdana;
+	color: #FFEEBB;
+	margin-bottom: 32px;
+
+}
+.texto{
+	font: 16px Verdana;
+	line-height: 150%;
+	color: #FFEEBB;
+	text-align: justify;
+}
+.texto-lado-imagem{
+	display: inline-block;
+	margin: 6px;
+}
+#imagem-esquerda{
+	margin: 12px 12px 4px 0;
+	float: left;
+	height: 120px;
+}
+
+#imagem-direita{
+	margin: 12px 0 4px 12px;
+	float: right;
+	height: 120px;
+}
+
+#fonte{
+	font: 16px Montserrat;
+	color: #FFEEBB;
+	font-style: italic;
+	float: right;
+}
+
+/*Sachês*/
+#lista-saches{
+	margin-left: 60px;
+}
+
+.texto-lista, .texto-lista > li{
+	font: 16px Verdana;
+	line-height: 28px;
+	color: #FFEEBB;
+}
+
+.texto-lista > ul{
+	padding-left: 38px;
+}
+
+/*Máquinas*/
+#secao-tabela{
+	margin-bottom: 16px;
+}
+
+.texto-tabela{
+	border: 1px solid;
+	border-collapse: collapse;
+	margin-top: 6px;
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #573218;
+}
+
+th, td{
+	border: 2px solid #642;
+	padding: 6px 12px;
+}
+
+.titulo-tabela{
+	color: #fff;
+	background-color: #907968;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+}
+
+.titulo-coluna{
+	color: #573218;
+	background-color: #eaceac;
+	text-align: left;
+	font-weight: bold;
+}
+
+.preco{
+	color: red;
+	font-weight: bold;
+}
+
+/*Compras*/
+#formulario-compras{
+	float: right;
+}
+
+fieldset{
+	background-color: #907968;
+}
+fieldset > input {
+	border: none;
+	border-radius: 4px;
+	height: 22px;
+	margin: 4px;
+}
+legend{
+	font-family: 'Montserrat', sans-serif;
+	color: #FFEEBB;	
+	font-size: 16px;
+	padding: 2px;
+}
+fieldset > label, fieldset > div > label{
+	font-family: 'Montserrat', sans-serif;
+	color: #FFEEBB;	
+	font-size: 16px;
+	margin-left: 8px;
+}
+
+select{
+	border: none;
+	border-radius: 4px;
+	height: 22px;
+	margin: 5px 2px 5px 0px;
+}
+select > option, optgroup{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 900;
+	color: #4e4e4e;
+}
+
+/*fsResEsq da prof- produtos */
+#produtos{
+	width: 200px;
+	height: 280px;
+	float: left;
+}
+
+#botao-remover, #enviar, #limpar{
+	border: none;
+	border-radius: 4px;
+	height: 22px;
+	width: 64px;
+	margin: 5px;
+}
+
+textarea{
+	border: none;
+	border-radius: 4px;
+	width: 180px;
+	height: 80px;
+	margin: 10px;
+}
+
+/*fsForm da prof*/
+#dados-identificacao{
+	width: 524px;
+	clear: both;
+}
+
+/*fsResDir da prof - forma de pagamento*/
+#forma-pagamento{
+	width: 310px;
+	height: 280px;
+	float: right;
+}
+
+#fieldset-dados-cartao{
+	padding: 8px;
+	margin: 8px;
+	margin-top: 22px;
+}
+
+#fieldset-dados-cartao > input, label{
+	margin-top: 16px;
+}
+
+div{
+	text-align: center;
+	margin-top: 16px;
+}
+
+div > label{
+ 	margin-right: 6px;
+}
+
+#enviar, #limpar{
+	float: right;
+}
+
+.direita{
+	float: right; /*esse trecho deveria fazer o input do label ''valor'' ficar alinhado a direita, mas não vai */
+}
+
+.input-420{
+	width: 420px;
+}
+
+.input-200{
+	width: 200px;
+
+}.input-100{
+	width: 98px;
+}
+
+.input-120{
+	width: 120px;
+}
+
+.input-80{
+	width: 80px;
+}
+
+.input-44{
+	width: 44px;
+}
+
+.input-22{
+	width: 22px;
+}
